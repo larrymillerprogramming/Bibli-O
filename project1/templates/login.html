@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <h2>
+        Welcome!
+    </h2>
+    <br>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>
+                Join the community to search for great books and share your own reviews.
+            </h4>
+            <br>
+            <h4>
+                Sign in or <a href="/register">register</a> today!
+            </h4>
+            <br>
+            <form action="/login" method="post">
+                <div class="form-group">
+                    <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="password" placeholder="Password" type="password">
+                </div>
+                <button class="btn btn-dark" type="submit">Log In</button>
+            </form>
+            <br>
+        </div>
+        <div class="col-md-6">
+            <img src="static/readinglist2.svg">
+        </div>
+    </div>
+{% endblock %}

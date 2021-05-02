@@ -1,0 +1,227 @@
+/* Body and general CSS. */
+body {
+    background-color: #c96d1c;
+    background-image: url('clean-textile.png') !important;
+    height: 100%;
+    font-family: "Josefin Slab", helvetica, arial;
+}
+
+::selection {
+    background-color: #c96d1c;
+}
+
+a {
+    color: #585682;
+}
+
+a:hover {
+    color: #585682;
+}
+
+h2 {
+    font-weight: bold !important;
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-family: "Fredericka the Great", "Arial Black", sans-serif;
+    color: #34325e;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2);
+}
+
+h5 {
+    font-weight: bold !important;
+    font-family: "Josefin Slab", "Arial Black", sans-serif;
+    color: #34325e;
+    text-shadow: 1px 4px 3px rgba(0,0,0,0.2);
+}
+
+button {
+    background-color: #585682 !important;
+    color: #e2ad38 !important;
+    font-weight: bold !important;
+    text-shadow: 1px 4px 3px rgba(0,0,0,0.2);
+    border: 0px !important;
+    box-shadow: inset -2px -2px 0 rgba(58, 26, 26, 0.2), inset 2px 2px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Navbar CSS. */
+.navbar {
+    background-image: linear-gradient(to bottom, #585682, #34325e) !important;
+    border-radius: 20px 20px 0px 0px !important;
+    border-right: 2px #34325e solid;
+    box-shadow: 5px -5px 10px #A05716;
+}
+
+nav .navbar-brand
+{
+    font-size: xx-large;
+    letter-spacing: 2px;
+    font-family: "Fredericka the Great", courier, helvetica, arial;
+    color: #f4e9cd !important;
+    text-shadow: 1px 4px 3px rgba(0,0,0,0.5)
+}
+
+/* Content CSS. */
+main .form-control
+{
+    display: inline-block;
+    width: auto;
+}
+
+main
+{
+    overflow-x: auto;
+    text-align: center;
+}
+
+.maindiv {
+    background-color: #f4e9cd;
+    border-right: 2px #34325e solid;
+    box-shadow: 5px 3px 10px #A05716;
+}
+
+main img
+{
+    max-width: 100%;
+}
+
+/* Table CSS. */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    padding: 5px; 
+}
+
+table th {
+    background-color: #f4e9cd;
+    color: #34325e;
+    border: none;
+}
+
+table td {
+    background-color: #585682;
+    color: #f4e9cd;
+    border: 1px solid #34325e;
+}
+
+table td a {
+    color: #f4e9cd;
+    text-decoration: underline;
+}
+
+table td a:hover {
+    color: #fec35a;
+    text-decoration: underline;
+}
+
+.description {
+    background-color: #ffffff;
+    background-image: url('clean-textile.png') !important;
+    color: #34325e !important;
+}
+
+/* Book page CSS. */
+.booktitle {
+    background-color: #ffffff;
+    background-image: url('clean-textile.png') !important;
+    border-radius: 12px;
+    box-shadow: 5px 3px 10px #666666;
+}
+
+.booktitlecolumn {
+    border-right: 3px double #585682;
+}
+
+.bookratingstable {
+    border: 0px;
+}
+
+.bookratingstable th {
+    background: none;
+    border: 0px;
+    color: #585682;
+}
+
+.bookratingstable td {
+    background: none;
+    border: 0px;
+    color: #34325e;
+}
+
+.submitreviewbox {
+    background-color: #c96d1c;
+    background-image: url('clean-textile.png') !important;
+    border-top: 2px #34325e solid;
+    border-left: 2px #34325e solid;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: inset 5px 3px 10px #A05716;
+    width: 100%;
+}
+
+/* Footer CSS. */
+footer {
+    background-image: linear-gradient(to top, #585682, #34325e);
+    color: #f4e9cd !important;
+    padding: 8px;
+    border-radius: 0px 0px 20px 20px !important;
+    border-right: 2px #34325e solid;
+    box-shadow: 5px 5px 10px #A05716;
+}
+
+footer a {
+    color: #f4e9cd;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #f4e9cd;
+    font-weight: bold;
+}
+
+/* Scrollbar CSS */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f4e9cd;
+    border: 0px none;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f4e9cd;
+}
+
+::-webkit-scrollbar-thumb:active {
+     background: #f4e9cd;
+}
+
+::-webkit-scrollbar-track {
+    background: #34325e;
+    border: 0px none;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #34325e;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #34325e;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}

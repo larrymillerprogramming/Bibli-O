@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <form action="/search" method="post">
+        <div class="row">
+            <div class="form-group col-9">
+                <input class="form-control" type="text" maxlength="250" id="keyword" name="keyword" style="width:100%" placeholder="Search Bibli-O ...">
+            </div>
+            <div class="form-group col-3">
+                <button class="btn btn-dark" type="submit" style="width:100%">Go!</button>
+            </div>
+        </div>
+    </form>
+    <h2>
+        Welcome!
+    </h2>
+    <hr>
+    <div class="row">
+        <div class="col-lg-6">
+            <h5>
+                Discover Your New Favorite!
+            </h5>
+            <h6>
+                <i>Recent reviews from our users:</i>
+            </h6>
+            <hr>
+            <table>
+                {{ table_data|safe }}
+            </table>
+            <br>
+        </div>
+        <div class="col-lg-6">
+            <img src="static/booklover2.svg">
+        </div>
+    </div>
+{% endblock %}
